@@ -11,7 +11,7 @@ import java.util.List;
 @RequestMapping("/api")
 public class PersonRestController {
 
-    @GetMapping(value = "/persons", produces = { MimeTypeUtils.APPLICATION_JSON_VALUE, MimeTypeUtils.APPLICATION_XML_VALUE })
+    @GetMapping(value = "/persons", produces = {  MimeTypeUtils.APPLICATION_XML_VALUE, MimeTypeUtils.APPLICATION_JSON_VALUE })
     List<Person> getAllPersons() {
         return List.of(
                 new Person(1L, "Olaf", "W.", 15),
