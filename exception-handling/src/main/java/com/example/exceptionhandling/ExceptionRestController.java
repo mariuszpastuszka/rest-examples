@@ -10,6 +10,6 @@ public class ExceptionRestController {
 
     @GetMapping("/safe-method")
     public void notFunny() {
-        throw new RuntimeException(":)");
+        throw new CoronaException(":)");
     }
 }

@@ -11,9 +11,9 @@ import org.springframework.web.context.request.WebRequest;
 @Slf4j
 public class CustomExceptionHandler {
 
-    @ExceptionHandler(value = RuntimeException.class)
+    @ExceptionHandler(value = CoronaException.class)
     @ResponseStatus(value = HttpStatus.NOT_FOUND)
-    public String resourceNotFoundException(RuntimeException ex, WebRequest request) {
+    public String resourceNotFoundException(CoronaException ex, WebRequest request) {
 
         return "almost ok";
     }
